@@ -16,7 +16,7 @@ app.post('/api',(req,res)=>{
     method:'POST',
     headers:{
       'Content-Type':'application/json',
-      'x-api-key':'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',
+      'x-api-key':process.env.ANTHROPIC_KEY,
       'anthropic-version':'2023-06-01',
       'Content-Length':Buffer.byteLength(data)
     }
